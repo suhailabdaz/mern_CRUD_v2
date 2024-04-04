@@ -101,7 +101,7 @@ const Signup = () => {
                             value={user.password}
                             onChange={(e)=> setuser({...user,password: e.target.value})}
                             className="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400" 
-                            type="text" placeholder="Enter your password" />
+                            type="password" placeholder="Enter your password" />
                         </div>
                         <div className="flex items-center justify-between">
 
@@ -115,7 +115,7 @@ const Signup = () => {
                     </form>
                     <div className="pt-2 text-center text-gray-400 text-xs">
               <span>
-                Copyright © 2023 <Link className='text-sm text-blue-500 hover:underline ' to='/'>SignIn</Link>
+                 <Link className='text-sm text-blue-500 hover:underline ' to='/'>SignIn</Link>
                 </span>
             </div>
                 </div>

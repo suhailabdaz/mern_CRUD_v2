@@ -70,7 +70,7 @@ isAuth && navigate('/profile')
               value={creds.password} 
               onChange={(e)=> setcreds({...creds,password:e.target.value})} 
               className="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400" 
-              type="text" placeholder="Enter your password" required/>
+              type="password" placeholder="Enter your password" required/>
             </div>
               <div className="flex items-center justify-between">
              
@@ -94,7 +94,7 @@ isAuth && navigate('/profile')
           </form>
             <div className="pt-5 text-center text-gray-400 text-xs">
               <span>
-                Copyright © 2023 <Link className='text-sm text-blue-500 hover:underline ' to='/register'>Signup</Link>
+                <Link className='text-sm text-blue-500 hover:underline ' to='/register'>Signup</Link>
                 </span>
             </div>
         </div>

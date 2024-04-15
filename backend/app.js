@@ -21,7 +21,7 @@ app.use('/admin',adminRouter)
 
 
 app.listen(PORT, () => {
-    console.log('Listening to PORT..'.bgGreen.bold)
+    console.log(`Listening to PORT..${PORT} `.bgGreen.bold)
 })
 
 export default app;

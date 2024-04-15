@@ -64,7 +64,7 @@ const AdminLogin = () => {
                value={creds.password} 
                onChange={(e)=> setcreds({...creds,password:e.target.value})}
               className="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400" 
-              type="text" placeholder="Enter your password"/>
+              type="password" placeholder="Enter your password"/>
             </div>
               <div className="flex items-center justify-between">
              

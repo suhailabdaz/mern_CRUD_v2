@@ -8,11 +8,12 @@ import AdminTable from "./AdminTable";
 const AdminPanel = () => {
   const navigate = useNavigate();
   const admin = useSelector((state) => state.admin);
+  const counter  = useSelector((state)=> state.counter);
   const logout = () => {
     localStorage.removeItem("adminToken");
-
     navigate("/admin");
   };
+  
   return (
     <>
       <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900 shadow-sm">
@@ -38,6 +39,7 @@ const AdminPanel = () => {
                 />
               </span>
             </button>
+            
           </div>
         </div>
       </nav>

@@ -25,7 +25,6 @@ const UpdateProfilePic = ({modal,closeModal,id}) => {
   const update =async ()=>{
     setload(true)
     try{
-      
       const res = await axios.post(`/updatePicture/${id}`,{image : preview})
       dispatch(updatePicture(res.data))
       closeModal()
